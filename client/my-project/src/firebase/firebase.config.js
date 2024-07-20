@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDnIUciq5CFxa_tOdkzA0GeVes8LA28i0s",
-  authDomain: "mern-book-inventory-f571f.firebaseapp.com",
-  projectId: "mern-book-inventory-f571f",
-  storageBucket: "mern-book-inventory-f571f.appspot.com",
-  messagingSenderId: "322382470545",
-  appId: "1:322382470545:web:73a8328045cb7494560e30"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
